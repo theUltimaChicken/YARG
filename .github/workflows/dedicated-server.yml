@@ -75,7 +75,7 @@ jobs:
           tar -czf YARG_DedicatedServer_v${{ inputs.version }}.tar.gz -C Build/DedicatedServer .
 
       - name: "[Post-build] Upload archive"
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: YARG_DedicatedServer_v${{ inputs.version }}.tar.gz
           path: YARG_DedicatedServer_v${{ inputs.version }}.tar.gz
